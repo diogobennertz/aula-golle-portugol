@@ -3,7 +3,11 @@ programa
 	
 	funcao inicio()
 	{
-		Escreva ("Receba seu doce")
+	inteiro valor,antecede
+		escreva("Digite o valor para retornar seu antecessor ")
+		leia(valor)
+		antecede = valor-1
+		escreva("O valor antecessor ao ",valor," é: ",antecede)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -11,7 +15,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 74; 
+ * @POSICAO-CURSOR = 219; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
