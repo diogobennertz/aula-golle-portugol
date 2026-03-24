@@ -16,9 +16,16 @@ programa
 	limpa()
 	escreva("Informe o Valor das Suas Horas: ")
 	leia(salario_hora)
+	se (horas_trabalhadas>160) 
+	{
 	hora_extra = (horas_trabalhadas-160)*(salario_hora*1.50)
 	salario_final = hora_extra+(salario_hora*160)
-	se (horas_trabalhadas-160!=0)
+	}
+	senao {
+	hora_extra = (horas_trabalhadas-160)*(salario_hora*1.50)
+	salario_final = hora_extra+(salario_hora*horas_trabalhadas)
+	}
+	se (horas_trabalhadas-160>0)
 	{
 		escreva("| Seu Salario Fixo é de: R$", salario_hora*160," |")
 		escreva("| Suas Horas Extras Deram: R$", hora_extra," |")
@@ -26,8 +33,8 @@ programa
 	}
 	senao
 	{
-		escreva("| Seu Salario Fixo é de: R$", salario_hora*160," |")
-		escreva("| Seu Salario Final é de: R$", salario_final," |")
+		escreva("| Seu Salario Fixo é de: R$", salario_hora*horas_trabalhadas," |")
+		escreva("| Seu Salario Final é de: R$", salario_hora*horas_trabalhadas," |")
 	}
 
 	}
@@ -37,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1195; 
+ * @POSICAO-CURSOR = 852; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {horas_trabalhadas, 12, 6, 17}-{hora_extra, 12, 25, 10}-{salario_hora, 12, 37, 12}-{salario_final, 12, 51, 13};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
