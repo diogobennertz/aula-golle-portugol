@@ -11,8 +11,10 @@ programa
 	// Pesi Ideal Feminino = (62.1 * altura) -44.7
 
 	real altura, peso_ideal
-	cadeia sexo
-
+	cadeia sexo,nome
+	
+	escreva("Informe Seu Nome: ")
+	leia(nome)	
 	escreva("Informe Seu Sexo(Mulher ou Homem): ")
 	leia(sexo)
 	escreva("Informe Sua Altura: ")
@@ -21,12 +23,12 @@ programa
 	se (sexo=="Mulher") 
 	{
 		peso_ideal = (62.1 * altura) -44.7
-		escreva("Seu Peso Ideal Sendo Uma Mulher Com ",altura," metros é de: ", peso_ideal, "kg")
+		escreva(nome, " Seu Peso Ideal Sendo Uma Mulher Com ",altura," metros é de: ", peso_ideal, "kg")
 	}
 	senao
 	{
 		peso_ideal = (72.7 * altura) -58
-		escreva("Seu Peso Ideal Sendo Um Homem Com ",altura," metros é de: ", peso_ideal, "kg")
+		escreva(nome, " Seu Peso Ideal Sendo Um Homem Com ",altura," metros é de: ", peso_ideal, "kg")
 	}
 	
 	
@@ -40,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 914; 
+ * @POSICAO-CURSOR = 685; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
