@@ -9,23 +9,30 @@ programa
 		escreva("Informe o Seu Salário: ")
 		leia(salario)
 		limpa()
-		se (salario<=1500)
+		se(salario>0)
 		{
-			aumento = 0.15
-			salario_aumentado = salario+(salario*aumento)
-			escreva("Seu Salário de ",salario," Mais 15% de Aumento, Resultou Em: ",salario_aumentado)
-		}
-		senao se (salario>1500 e salario<=3000)
-		{
-			aumento = 0.10
-			salario_aumentado = salario+(salario*aumento)
-			escreva("Seu Salário de ",salario," Mais 10% de Aumento, Resultou Em: ",salario_aumentado)
+			se (salario<=1500)
+			{
+				aumento = 0.15
+				salario_aumentado = salario+(salario*aumento)
+				escreva("Seu Salário de ",salario," Mais 15% de Aumento, Resultou Em: ",salario_aumentado)
+			}
+			senao se (salario>1500 e salario<=3000)
+			{
+				aumento = 0.10
+				salario_aumentado = salario+(salario*aumento)
+				escreva("Seu Salário de ",salario," Mais 10% de Aumento, Resultou Em: ",salario_aumentado)
+			}
+			senao
+			{
+				aumento = 0.05
+				salario_aumentado = salario+(salario*aumento)
+				escreva("Seu Salário de ",salario," Mais 5% de Aumento, Resultou Em: ",salario_aumentado)
+			}
 		}
 		senao
 		{
-			aumento = 0.05
-			salario_aumentado = salario+(salario*aumento)
-			escreva("Seu Salário de ",salario," Mais 5% de Aumento, Resultou Em: ",salario_aumentado)
+			escreva("Valor Deve ser Acima de 0! Reinicie o Programa!")
 		}
 		
 	}
@@ -35,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 788; 
+ * @POSICAO-CURSOR = 930; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
